@@ -7,12 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Sample</ion-title>
+    <ion-title >Muestra</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <button ion-button icon-start (click)= "getPicture()">
+    <ion-icon name="camera"></ion-icon>
+    Toma una foto
+  </button>
+  <img *ngIf="image" [src]="image" />
 
 </ion-content>

@@ -11,3 +11,25 @@
   "background_color": "#4e8ef7",
   "theme_color": "#4e8ef7"
 }
+{
+   "declared-services": {
+      "visual-recognition-service": {
+         "label": "watson_vision_combined",
+         "plan": "Lite"
+      }
+   },
+   "applications": [
+      {
+         "name": "Visual Recognition-rd",
+         "path": "https://gateway.watsonplatform.net/visual-recognition/api",
+         "command": "npm start",
+         "memory": "3000M",
+         "instances": 5,
+         "services": [
+            "visual-recognition-service"
+         ],
+         "env": null
+      }
+   ],
+   "NODE_ENV": "production"
+}
